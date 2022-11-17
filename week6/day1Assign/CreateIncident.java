@@ -16,7 +16,7 @@ public class CreateIncident extends ServiceNow {
 		driver.findElement(By.xpath("(//input[@class='form-control'])[1]")).sendKeys(incidentNo,Keys.ENTER);
 		String text = shadow.findElementByXPath("//a[@class='linked formlink']").getText();
 		System.out.println(text);
-		if(text.contentEquals(text)) {
+		if(text.contentEquals(incidentNo)) {
 			System.out.println("Incident Created");
 		}else {
 			System.out.println("Incident not Created");
