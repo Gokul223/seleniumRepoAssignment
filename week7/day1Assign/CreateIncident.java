@@ -37,10 +37,7 @@ public class CreateIncident extends ServiceNow {
 			
 		}
 
-		public static String[][] incidentNum() {
-			
-			return incidentNum();
-		}
+		
 		
 
 }
